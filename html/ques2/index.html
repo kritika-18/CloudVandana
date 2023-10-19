@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+
+    <body>
+        <h1>Customer Survey Form</h1>
+        <form id="form">
+            <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required placeholder="Enter your first name"><br>
+            </div>
+            <div class="Content form-control">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required placeholder="Enter your last name"><br>
+
+            </div>
+            <div class="Content form-control">
+                <label for="dob">Date of Birth </label>
+                <input type="date" id="dob" required><br>
+            </div>
+            <div class="Content form-control">
+                <label for="country">Country</label>
+                <select id="country" required>
+                <option value="" diabled selected>Select a country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+                <option value="Other">Other</option>
+            </select><br>
+            </div>
+
+            <div class="Content form-control">
+            <label for="gender">Gender</label>
+            <input type="checkbox" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="checkbox" id="others" name="gender" value="Others" required>
+            <label for="others">Others</label><br>
+            </div>
+
+            <div class="Content form-control">
+                <label for="profession">Profession </label>
+                <input type="text" id="profession" required placeholder="Student, Doctor, Engineer, etc."><br>
+            </div>   
+            <div class="form-control">
+                <label for="email">Email </label>
+                <input type="email" id="email" required placeholder="example@gmail.com"><br>
+            </div>
+      
+            <div class="Content form-control">
+                <label for="mobile">Mobile Number </label>
+                <input type="tel" id="mobile" required placeholder="9123456789"><br>
+            </div>
+            
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or suggestions
+                </label>
+                <textarea name="comment" id="comment"
+                    placeholder="Enter your comment here">
+                </textarea>
+            </div>
+      
+            <button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
+            <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+        </form>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                
+                <div id="popupResult"></div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

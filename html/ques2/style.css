@@ -1,0 +1,37 @@
+body{
+    background-color: #3399ff;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    max-width: 400px;
+    margin:50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-control{
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.form-control input, .form-control select, .form-control textarea{
+    border: 1px solid #777;
+    border-radius: 1px;
+    
+    width: 95%;
+}
+
+.form-control input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+button{
+    background-color: #3399ff;
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
